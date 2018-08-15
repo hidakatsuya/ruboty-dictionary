@@ -30,6 +30,8 @@ DICTIONARY_NOTE_COLUMN_NAMES, 'Comma separeted names for note columns', optional
 
 ## Todo
 
+- [ ] Use GoogleDrive API V3 (google_drive 2.x)
+  - Already implemented. Its code [here](https://github.com/hidakatsuya/ruboty-dictionary/tree/google_drive_v3)
 - [ ] Add `dictionary list` command
 - [ ] Add spec
 
