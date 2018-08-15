@@ -19,14 +19,19 @@ DICTIONARY_GOOGLE_REFRESH_TOKEN, 'Google Refresh token issued with access token 
 DICTIONARY_SPREADSHEET_KEY, 'Google Spreadsheet key for Dictionary (e.g. https://docs.google.com/spreadsheets/d/<key>/edit#gid=0)'
 DICTIONARY_WORD_COLUMN_NAME, 'Name for word column'
 DICTIONARY_DESCRIPTION_COLUMN_NAME, 'Name for description column'
-DICTIONARY_NOTE_COLUMN_NAMES, 'Comma separeted names for note columns'
+DICTIONARY_NOTE_COLUMN_NAMES, 'Comma separeted names for note columns', optional: true
 ```
 
 ## Usage
 
 ```
-@ruboty dictionary word-you-want-to-look-up
+@ruboty dictionary lookup word-you-want-to-look-up
 ```
+
+## Todo
+
+- [ ] Add `dictionary list` handler
+- [ ] Add spec
 
 ## Contributing
 
