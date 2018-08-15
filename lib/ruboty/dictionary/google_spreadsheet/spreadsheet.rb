@@ -32,7 +32,7 @@ module Ruboty
         end
 
         def session
-          @session ||= GoogleDrive::Session.from_credentials(@client.credentials)
+          @session ||= GoogleDrive.login_with_oauth(@client.access_token)
         end
       end
     end
