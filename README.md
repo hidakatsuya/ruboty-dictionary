@@ -30,7 +30,7 @@ DICTIONARY_NOTE_COLUMN_NAMES, 'Comma separeted names for note columns', optional
 
 ## Todo
 
-- [ ] Add `dictionary list` handler
+- [ ] Add `dictionary list` command
 - [ ] Add spec
 
 ## Contributing
