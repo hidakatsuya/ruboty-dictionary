@@ -29,10 +29,9 @@ module Ruboty
           detail = []
           detail << row.fetch(ENV['DICTIONARY_DESCRIPTION_COLUMN_NAME'])
 
-          note_column_names = ENV['DICTIONARY_NOTE_COLUMN_NAMES']&.split(',')
-          if note_column_names
-            detail += note_column_names.reject { |n| row[n].empty? }.map { |n| "* #{row[n]}" }
-          end
+          note_column_names = ENV['DICTIONARY_NOTE_COLUMN_NAMES']&.split(',') || []
+          note_column_names.reject! { |name| row[name].empty? }
+          detail += note_column_names.map { |name| "> #{name} = #{row[name]}" } if note_column_names.any?
 
           detail.join("\n")
         end
