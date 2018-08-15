@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'ruboty'
-  spec.add_runtime_dependency 'google_drive'
+  spec.add_runtime_dependency 'ruboty', '>= 1.3.0'
+  spec.add_runtime_dependency 'google_drive', '~> 2.1.11'
 
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'
