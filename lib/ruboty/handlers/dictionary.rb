@@ -1,4 +1,5 @@
 require 'ruboty/dictionary/actions/lookup'
+require 'ruboty/dictionary/actions/show_url'
 
 module Ruboty
   module Handlers
@@ -13,9 +14,14 @@ module Ruboty
       env :DICTIONARY_NOTE_COLUMN_NAMES, 'Comma separeted names for note columns', optional: true
 
       on /dictionary lookup (?<word>.+)/, name: 'dictionary_lookup', description: 'Lookup word in the dictionary'
+      on /dictionary url/, name: 'dictionary_show_url', description: 'Show spreadsheet url'
 
       def dictionary_lookup(message)
         Ruboty::Dictionary::Actions::Lookup.new(message).call
+      end
+
+      def dictionary_show_url(message)
+        Ruboty::Dictionary::Actions::ShowUrl.new(message).call
       end
     end
   end
