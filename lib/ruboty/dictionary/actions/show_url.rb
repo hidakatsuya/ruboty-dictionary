@@ -1,5 +1,3 @@
-require 'ruboty/dictionary/google_spreadsheet/spreadsheet'
-
 module Ruboty
   module Dictionary
     module Actions
